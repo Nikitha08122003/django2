@@ -37,3 +37,8 @@ def userlogout(request):
 
 def userd(request):
          return render(request,'user.html') 
+
+def userd(request):
+         return render(request,'user.html') 
+def userd(request):
+         return render(request,'user.html') 

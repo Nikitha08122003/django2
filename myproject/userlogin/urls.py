@@ -5,6 +5,10 @@ urlpatterns=[
     path ('login/',views.userlogin),
     path ('use/',views.userd),
     path ('logout/',views.userlogout),
+    path ('logout/',views.userlogout),
+
+    path ('logout/',views.userlogout),
+
 
 
 
