@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</body>
+</html>
+ <form class="row g-3 needs-validation" novalidate method="POST">
+    {% csrf_token %}
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">student name</label>
+    <input type="text" class="form-control" id="validationCustom01" name="studentname" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom02" class="form-label">email</label>
+    <input type="text" class="form-control" id="validationCustom02" name="email" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustomUsername" class="form-label">password</label>
+    <div class="input-group has-validation">
+      <input type="password" class="form-control" id="validationCustomUsername" name="password" aria-describedby="inputGroupPrepend" required>
+      <div class="invalid-feedback">
+        Please choose a username.
+      </div>
+    </div>
+  </div>
+   <p class="text-danger fw-bol" >{{error}}</p>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+
+</form>
+</body>
+</html>
